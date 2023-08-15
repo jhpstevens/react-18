@@ -1,5 +1,6 @@
-import React from "react";
+import React from 'react';
 
+// interface Expense defines an Expense object
 interface Expense {
   id: number;
   description: string;
@@ -7,11 +8,13 @@ interface Expense {
   category: string;
 }
 
+// interface Props defines the values that go back to the parrent
 interface Props {
   expenses: Expense[];
   onDelete: (id: number) => void;
 }
 
+// check list. If list has no items then return
 const ExpenseList = ({ expenses, onDelete }: Props) => {
   if (expenses.length === 0) return null;
 
@@ -26,6 +29,7 @@ const ExpenseList = ({ expenses, onDelete }: Props) => {
         </tr>
       </thead>
       <tbody>
+        {/* This line iterates through all expenses in the array */}
         {expenses.map((expense) => (
           <tr key={expense.id}>
             <td>{expense.description}</td>
@@ -45,7 +49,12 @@ const ExpenseList = ({ expenses, onDelete }: Props) => {
       <tfoot>
         <tr>
           <td>Total</td>
-          <td>${expenses.reduce((acc, expense) => expense.amount + acc, 0).toFixed(2)}</td>
+          <td>
+            {/* This line counts (accumulates) the amounts */}$
+            {expenses
+              .reduce((acc, expense) => expense.amount + acc, 0)
+              .toFixed(2)}
+          </td>
           <td></td>
           <td></td>
         </tr>
