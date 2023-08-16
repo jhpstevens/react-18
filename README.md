@@ -1,4 +1,8 @@
-#Chapter 06-13
+# Chapter 06-13
+# In this chapter we will build the form without validation and returning values
+# in the file: ExpenseForm.tsx
+# We also will define an array with the catagories as const in App.tsx 
+# and use the categories dynamicaly in both ExpenseFilter.tsx and ExpenseForm.tsx
 
 # React + TypeScript + Vite
 
