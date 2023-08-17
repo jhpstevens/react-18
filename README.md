@@ -1,9 +1,6 @@
-# Chapter 06-14
-# in this chapter we add the validation and error messages using zod, react-hook-form and zodresolver
-# zod: is used for defining a schema with validationrules and error messages
-# react-hook-form: 
-# One of the key concepts in React Hook Form is to register your component into the hook. This will make its value available for both the form validation and submission.
-# zodresolver: zodResolver is a function for integrating an external validation library like Zod with the React Hook Form library.
+# Chapter 06-15
+
+# in this chapter we add an expense to the Expense list
 
 # React + TypeScript + Vite
 
