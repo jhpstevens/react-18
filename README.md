@@ -1,6 +1,5 @@
-# Chapter 06-15
-
-# in this chapter we add an expense to the Expense list
+# Chapter 07-02
+# in this chapter we show an example of the Effect hook.
 
 # React + TypeScript + Vite
 
